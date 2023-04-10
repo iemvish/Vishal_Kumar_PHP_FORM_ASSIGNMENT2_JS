@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta firstname="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="student-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 m-auto">
+                    <div class="form-input-block">
+                        <h1 class="text-center shadow mb-3">Register here</h1>
+                        <form action="">
+                            <div class="form-contact">
+                                <div class="row">
+                                    <div class="col-sm-6 ">
+                                        <label for="fname" class="form-label ">First Name</label>
+                                        <input type="text" class="form-control" id="fname" required>
+                                        <div class="invalid-feedback">
+                                            First name must be filled out.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="lname" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lname" required>
+                                        <div class="invalid-feedback">
+                                            Last name must be filled out.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-contact">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="gender" class="pb-2">Gender</label> <br>
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="male" >
+                                            <label class="form-check-label" for="male">
+                                                Male
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="female" >
+                                            <label class="form-check-label" for="female">
+                                                Female
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="other" >
+
+                                            <label class="form-check-label" for="other">
+                                                Other
+                                            </label>
+                                        </div>
+                                        <div class="invalid-feedback d-block" id="gender-error"></div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="age" class="form-label">Age</label>
+                                        <select class="form-select" aria-label="Default select example" id="age">
+                                            <option>How old are you!</option>
+                                            <script>
+                                                for (i = 18; i <= 55; i++) {
+                                                    document.write('<option value="' + i + '">' + i + '</option>');
+                                                }
+                                            </script>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-contact">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="phone" class="form-label">Phone number:</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">+91</span>
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter your phone number" pattern="[0-9]{10}"
+                                                aria-label="Userfirstname" aria-describedby="basic-addon1" id="phone" maxlength="10"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Your Phone number must be filled out.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="date" class="form-label">Admision Date:</label>
+                                        <input type="date" class="form-control" id="date" name="date" required>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-contact">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label for="firstfirstname" class="form-label">Tech</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="1" selected>PHP/LARAVEL</option>
+                                            <option value="2">REACT JS</option>
+                                            <option value="3">NODE JS</option>
+                                            <option value="3">ANGULAR JS</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <div class="col-sm-12">
+                                    <label for="flexCheckDefault" class="form-label">Education</label><br>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                        <label class="form-check-label" for="flexCheckDefault1">
+                                            Matric
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+                                        <label class="form-check-label" for="flexCheckChecked2">
+                                            Plus Two
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                        <label class="form-check-label" for="flexCheckDefault3">
+                                            Graduatuion
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+                                        <label class="form-check-label" for="flexCheckChecked4">
+                                            Post Graduatuion
+                                        </label>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label for="address" class="form-label">Address:</label>
+
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Where you live</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-contact d-flex justify-content-center ">
+                                <button type="button" class="btn btn-primary me-4" id=""
+                                    onclick="addTableRow()">Submit</button>
+                                <button type="button" class="btn btn-danger">Reset</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table" id="tableData">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Admision Date</th>
+                    <th scope="col">Tech</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+            </tbody>
+        </table>
+        <script>
+            function addTableRow() {
+                let student = []
+                student.push(document.getElementById("fname").value)
+                console.log(student)
+                let name = document.getElementById("fname");
+                let lname = document.getElementById("lname");
+                let maleRadio = document.querySelector('#male');
+                let femaleRadio = document.querySelector('#female');
+                let otherRadio = document.querySelector('#other');
+                let gender;
+                let age = document.getElementById("age");
+                let date = document.getElementById("date");
+                let phone = document.getElementById("phone");
+                let table = document.getElementById("tableData");
+                let rowCount = table.rows.length;
+                let row = table.insertRow(rowCount);
+                row.insertCell(0).innerHTML = name.value + " " + lname.value;
+                if(maleRadio.checked){
+                    gender = 'male';
+                }
+                else if(femaleRadio.checked){
+                    gender = 'female';
+                }
+                else if(otherRadio.checked){
+                    gender = 'other';
+                }
+                else
+                {
+                    gender='other';
+                }
+                row.insertCell(1).innerHTML = gender;
+                row.insertCell(2).innerHTML = age.value;
+                row.insertCell(3).innerHTML = date.value;
+                
+            }
+            
+
+        </script>
+
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
